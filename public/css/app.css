@@ -14,6 +14,10 @@ div {
   word-wrap: break-word;
   line-height: 1.25rem;
 }
+.main-header {
+  height: 40px;
+  background: #BE2632;
+}
 
 #view-change-button {
   display: inline-block;
