@@ -1,0 +1,40 @@
+{
+  "name": "assistant-basic-starter",
+  "version": "0.0.1",
+  "description": "An application that demonstrates the Watson Assistant service in a simple chat interface simulating a cognitive car dashboard.",
+  "private": true,
+  "engines": {
+    "node": ">=4.0",
+    "npm": ">=3.0"
+  },
+  "scripts": {
+    "start": "node server/server.js",
+    "debug": "chmod +x run-debug && ./run-debug",
+    "test": "nyc mocha",
+    "dev": "nodemon server/server.js"
+  },
+  "nodemonConfig": {
+    "env": {
+      "NODE_HEAPDUMP_OPTIONS": "nosignal"
+    }
+  },
+  "dependencies": {
+    "appmetrics-dash": "^3.3.2",
+    "appmetrics-prometheus": "^0.0.2",
+    "appmetrics-zipkin": "^1.0.4",
+    "body-parser": "^1.17.2",
+    "express": "~4.15.3",
+    "log4js": "^1.1.1",
+    "ibm-cloud-env": "^0",
+    "watson-developer-cloud": "^3.1.1",
+    "vcap_services": "^0.3.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1",
+    "chai": "^4.0.0",
+    "mocha": "^3.4.2",
+    "nyc": "^10.3.2"
+  },
+  "author": "IBM Corp.",
+  "license": "Apache-2.0"
+}

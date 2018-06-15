@@ -1,0 +1,12 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: WatsonAssistantBasicMQCOQ
+  buildpack: sdk-for-nodejs
+  command: npm start
+  memory: 256M
+  domain: eu-gb.mybluemix.net
+  host: watson-assistant-basic-mqcoq
+  services:
+    - watson-assistant-basic-m-conversati-1528988038535
